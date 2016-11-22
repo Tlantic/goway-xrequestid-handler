@@ -13,6 +13,7 @@ const (
 	DEFAULT_HEADER_KEY = "X-Request-Id"
 )
 
+
 type XRequestIDHandler struct {
 	HeaderKey	string
 }
