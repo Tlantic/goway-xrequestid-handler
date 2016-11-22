@@ -13,11 +13,12 @@ const (
 	DEFAULT_HEADER_KEY = "X-Request-Id"
 )
 
+
 type XRequestIDHandler struct {
 	HeaderKey	string
 }
 //noinspection GoUnusedExportedFunction
-func XRequestIDHandler( key string ) (*XRequestIDHandler) {
+func NewXRequestIDHandler( key string ) (*XRequestIDHandler) {
 
 	if (key == "") {
 		key = DEFAULT_HEADER_KEY
