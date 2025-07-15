@@ -29,6 +29,6 @@ func NewXRequestIDHandler(key string) *XRequestIDHandler {
 }
 
 func (handler *XRequestIDHandler) Handle(route *router.Route, req *http.Request) *HandlerError {
-	req.Header.Add(handler.HeaderKey, uuid.NewV4().String())
+	req.Header.Add(handler.HeaderKey, uuid.New().String())
 	return nil
 }
