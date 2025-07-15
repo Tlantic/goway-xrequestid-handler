@@ -1,4 +1,4 @@
 package: github.com/Tlantic/goway-xrequestid-handler
 import:
-- package: github.com/twinj/uuid
-  version: ^0.10.0
+- package: github.com/google/uuid
+  version: 1.0.0
